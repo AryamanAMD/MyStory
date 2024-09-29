@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+</head>
+<body>
+    <h1>Text Translator</h1>
+    <label for="text">Enter text to translate:</label><br>
+    <textarea id="text" rows="4" cols="50" placeholder="Type text here..."></textarea><br>
+    <label for="language">Select target language:</label><br>
+    <select id="language">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="pt">Portuguese</option>   <!-- Portuguese -->
+        <option value="zh">Chinese</option>      <!-- Chinese -->
+        <option value="ja">Japanese</option>      <!-- Japanese -->
+        <option value="ru">Russian</option>       <!-- Russian -->
+        <option value="ar">Arabic</option>        <!-- Arabic -->
+    </select><br>
+    <button onclick="translateText()">Translate</button>
+    <h3>Translated Text:</h3>
+    <p id="result"></p>
+    <p id="phonetic"></p> <!-- New paragraph for phonetic transcription -->
+    <script src="app.js"></script>
+</body>
+</html>
